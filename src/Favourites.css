@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.favourite-cart-item {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 ;
+    border-bottom: solid rgb(196, 196, 196);
+}
+
+.favourite-cart-item .favourite-image {
+    height: 100%;
+    width: 30%;
+}
+
+.favourite-shoe-name {
+    display: flex;
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.no-items-message-fav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

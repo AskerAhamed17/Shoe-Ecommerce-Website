@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buy-shoe-content {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-2 {
+    width: 100%;
+}
+
+.shoe-info {
+    width: 80%;
+    height: 90%;
+    display: flex;
+}
+.shoe-image-in {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(225, 225, 225);
+}
+.shoe-rate {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#shoe-name {
+    font-weight: bold;
+    font-size: 30px;
+}
+#shoe-gender {
+    font-size: 17px;
+}
+#shoe-mrp {
+    font-size: 25px;
+}
+#taxes {
+    color: rgb(114, 114, 114);
+    font-size: 15px;
+}
+.select-size {
+    height: 40%;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.size {
+    width: 80px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+.size:hover {
+    border: solid black;
+}
+.select-size input {
+    width: 80%;
+    height: 90%;
+    border-radius: 30px;
+    padding: 10px 0 10px 30px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(232, 232, 232);
+}
+.shoe-rate-buttons {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.shoe-rate-buttons button{
+    padding: 20px;
+    width: 400px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    opacity: 100%;
+    transition: 0.2s;
+}
+.shoe-rate-buttons button:hover{
+    opacity: 70%;
+}
+.shoe-rate-buttons span button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.1s;
+}
+.shoe-rate-buttons span button:hover {
+    border: 3px solid black;
+}
+
+.shoe-description {
+    height: 300px;
+    border: solid black;
+    display: flex;
+}
+
+@media screen and (max-width : 1490px) {
+    .shoe-image-in {
+        width: 70%;
+    }
+    .shoe-info {
+        flex-direction: column;
+    }
+    .select-size {
+        height: 120px;
+        width: 300px;
+    }
+    .shoe-rate {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .shoe-rate-buttons button{
+        padding: 15px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width : 570px) {
+    .shoe-image-in {
+        width: 100%;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width : 430px) {
+    .shoe-info {
+        padding: 40px 0;
+    }
+    .select-size {
+        height: 120px;
+        width: 250px;
+    }
+    .shoe-rate-buttons button{
+        padding: 10px;
+        width: 240px;
+        font-size: 15px;
+    }
+    #shoe-name {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    #shoe-gender {
+        font-size: 14px;
+    }
+    #shoe-mrp {
+        font-size: 18px;
+    }
+    #taxes {
+        color: rgb(114, 114, 114);
+        font-size: 13px;
+    }
+}

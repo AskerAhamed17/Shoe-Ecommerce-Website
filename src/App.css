@@ -1,0 +1,1038 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  position: relative;
+  z-index: 800;
+}
+
+.sidebarOpen{
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  width: 220px;
+  height: 100%;
+  padding: 70px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s ease-in-out;
+}
+.sidebarOpen ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+}
+.sidebarOpen ul li {
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 100%;
+  transition: 0.2s;
+}
+.sidebarOpen ul li:hover {
+  opacity: 70%;
+}
+.sidebarClosed {
+  display: none;
+}
+
+.navbar-1 {
+  background-color: rgb(244, 244, 244);
+  height: 50px;
+}
+
+.navbar-1 ul,
+li {
+  display: inline-block;
+}
+
+.navbar-1 ul {
+  margin-left: 70%;
+  width: 400px;
+}
+
+.navbar-1 li {
+  margin-left: 6%;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 100%;
+}
+
+.navbar-1 li:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.navbar-2 {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.menu-icons {
+  display: none;
+}
+
+.navbar-2 ul,
+li {
+  display: inline-block;
+  font-weight: 700;
+  color: black;
+}
+
+.navbar-2 .logo {
+  display: inline-block;
+  margin-right: 18%;
+  background-image: url(pngwing.com\(2\).png);
+  background-size: cover;
+  background-position: center;
+  height: 28px;
+  width: 90px;
+}
+
+.navbar-2 ul {
+  width: 710px;
+  margin-top: 2%;
+}
+
+.navbar-2 li {
+  margin-left: 4%;
+  height: 40px;
+  transition: 0.2s;
+}
+
+.navbar-2 li:hover {
+  border-bottom: solid black;
+  cursor: pointer;
+}
+
+.navbar-2 .icons {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-2 input {
+  margin-left: 2%;
+  display: inline-block;
+  padding: 6px 0 6px 40px;
+  border-radius: 20px;
+  background-color: rgb(235, 235, 235);
+  font-weight: bold;
+  color: rgb(156, 156, 156);
+  border: none;
+  width: 200px;
+}
+
+.navbar-2 i {
+  font-size: 28px;
+}
+
+.navbar-3 {
+  height: 70px;
+  text-align: center;
+}
+
+.navbar-3 h6 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navbar-3 p {
+  font-weight: 500;
+  font-size: 12px;
+  position: relative;
+  bottom: 6%;
+}
+
+.navbar-4 {
+  border: solid purple;
+  height: 60px;
+}
+
+.main-content {
+  background-color: rgb(244, 244, 244);
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.large-image {
+  background-image: url(violet\ sneaker.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 1400px;
+  height: 600px;
+}
+
+.medium-content {
+  height: 280px;
+  text-align: center;
+}
+
+/* Medium Content */
+
+.medium-content p,
+h1 {
+  text-align: center;
+}
+
+#top {
+  font-weight: 600;
+  position: relative;
+  top: 8%;
+}
+
+.medium-content h1 {
+  font-weight: 700;
+  font-size: 80px;
+  font-family: 'Protest Strike', sans-serif;
+  color: black;
+}
+
+.medium-content button {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  opacity: 100%;
+}
+
+.medium-content button:hover {
+  opacity: 60%;
+}
+
+
+.trending-content {
+  height: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 40px;
+}
+
+.img-1,
+.img-2 {
+  height: 100%;
+  width: 48.5%;
+}
+
+.img-1 {
+  background-image: url(jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg  );
+  background-size: cover;
+  background-position: center;
+  z-index: 800;
+}
+
+.img-2 {
+  background-image: url(xavier-teo-SxAXphIPWeg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 800;
+}
+
+.img-1-content,
+.img-2-content {
+  height: 100%;
+  width: 350px;
+  background-color: rgb(137, 137, 137);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 40px;
+  background: transparent;
+}
+
+.img-1-content h2,
+.img-2-content h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  position: relative;
+}
+
+.img-1-content button,
+.img-2-content button {
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  opacity: 100%;
+  position: relative;
+}
+
+.img-1-content button:hover,
+.img-2-content button:hover {
+  background-color: gray;
+}
+
+/*shoe content*/
+
+.shoes-content {
+  height: 600px;
+  padding: 0 40px;
+}
+
+.shoes-content .shoes-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 10px 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.shoes-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.shoe-infos {
+  height: 530px;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.boxes {
+  display: inline-block;
+  height: 500px;
+  width: 350px;
+  margin-right: 10px;
+}
+
+.shoe-image {
+  height: 356px;
+  background-color: rgb(239, 239, 239);
+  background-position: center;
+  background-size: cover;
+}
+
+.shoe-details {
+  height: 140px;
+  padding: 10px 0 10px 0;
+}
+
+.shoe-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.shoe-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+.shoe-mrp {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*white sneakers*/
+
+.white-sneakers {
+  height: 770px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+.white-sneakers .header-p-tag {
+  font-weight: 600;
+}
+
+.white-sneakers h1 {
+  font-weight: 700;
+  font-size: 80px;
+  font-family: 'Protest Strike', sans-serif;
+  color: black;
+}
+
+.white-sneakers button {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  opacity: 100%;
+}
+
+.white-sneakers button:hover {
+  opacity: 60%;
+}
+
+
+.list-of-white-sneakers {
+  height: 476px;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.white-sneaker-image {
+  position: relative;
+  margin-top: 1%;
+  display: inline-block;
+  width: 350px;
+  height: 420px;
+  margin-left: 1%;
+}
+
+.white-sneaker-img-hover {
+  width: 350px;
+  height: 420px;
+  background-color: transparent;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.white-sneaker-img-hover h2 {
+  position: absolute;
+  font-weight: 500;
+}
+
+.white-sneaker-img-hover:hover {
+  background-color: rgba(139, 139, 139, 0.6);
+  color: white;
+}
+
+/* That small number tag near shopping bag icon */
+
+.nothing-in-cart {
+  display: none;
+}
+
+.cart-numbers {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  position: relative;
+  right: 5%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Shop By Clothes */
+
+.clothes-section {
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 40px;
+}
+
+.clothes-image {
+  height: 740px;
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yNV9waG90b19vZl9hX2NsZWFuX3doaXRlX2ZvbGRlZF9ob29kaWVfbW9ja3VwX19mZDMzYTIxYy1hMTM1LTQwYjUtOGMxOC0wZDdlMmFjZTE0ZGJfMS5qcGc.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.perfect-gift-title {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.perfect-gift-title h1 {
+  font-weight: 700;
+  font-size: 80px;
+  font-family: 'Protest Strike', sans-serif;
+  color: black;
+}
+
+.perfect-gift-title button {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  opacity: 100%;
+}
+
+.perfect-gift-title button:hover {
+  opacity: 70%;
+}
+
+/* Shop T-Shirts */
+
+.shop-tshirts {
+  height: 700px;
+  padding: 10px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.tshirts {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.tshirt {
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-right: 15px;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tshirt img {
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 370px;
+}
+
+.tshirt-details {
+  width: 100%;
+}
+
+.tshirt-name, .tshirt-mrp {
+  font-weight: bold;
+}
+
+.tshirt-category {
+  color: gray;
+  font-weight: bold;
+}
+
+
+
+/* Shop By Sport */
+/* ------------------------------------ */
+
+.shop-by-sport {
+  height: 500px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-by-sport-header {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.shop-by-sport-content {
+  display: flex;
+}
+
+.cricket, .football, .basketball {
+  width: 600px;
+  height: 400px;
+  padding-right: 10px;
+}
+
+.sport-header {
+  font-size: 20px;
+  color: rgb(78, 78, 78);
+}
+
+.cricket-image, .football-image, .basketball-image {
+  height: 85%;
+  background-size: cover;
+  background-position: center;
+}
+
+.cricket-image {
+  background-image: url(cricket.jpg);
+}
+
+.football-image {
+  background-image: url(football.jpg);
+}
+
+.basketball-image {
+  background-image: url(basketball.jpg);
+}
+
+/* ----------------------------------------------- */
+
+/* Bottom Page */
+/* ----------------------------------------------- */
+
+.bottom-page {
+  border: solid black;
+  height: 400px;
+  margin-top: 10%;
+  padding: 20px 40px;
+  background-color: rgb(18, 18, 18);
+}
+
+.get-help-content {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.become-member, .get-help, .about, .social-media {
+  height: 100%;
+  width: 24%;
+}
+
+.become-member {
+  height: 50%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.get-help ,.about {
+  height: 80%;
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(158, 158, 158);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.get-help-header, .about-bottom {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.social-media {
+  width: 18%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  color: gray;
+  font-size: 25px;
+}
+
+.social-media p {
+  transition: 0.2s;
+}
+
+.social-media p:hover {
+  color: white;
+}
+
+.credits-content {
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.credits-content a {
+  color: white;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1322px) {
+  .navbar-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-2 ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1118px) {
+
+  .navbar-2 .icons {
+    display: none;
+  }
+
+  .navbar-1 {
+    display: none;
+  }
+
+  .menu-icons {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-3 {
+    padding: 10px;
+    font-weight: 200;
+  }
+
+  .main-content,
+  .trending-content,
+  .navbar-2,
+  .shoes-content,
+  .white-sneakers,
+  .clothes-section,
+  .shop-by-sport,
+  .bottom-page {
+    padding: 20px;
+  }
+
+  .menu-icons i {
+    font-size: 28px;
+  }
+
+  .clothes-image {
+    height: 650px;
+  }
+
+  /* Tshirts Page */
+
+  .shop-tshirts {
+    padding: 20px;
+  }
+  
+  .tshirts {
+    height: 80%;
+    width: 100%;
+  }
+  
+  .tshirt {
+    min-width: 300px;
+  }
+
+  .img-div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-content {
+    height: 600px;
+  }
+
+  .large-image {
+    height: 500px;
+  }
+
+  .navbar-2 .logo {
+    height: 18px;
+    width: 50px;
+  }
+
+  .medium-content p {
+    font-size: 14px;
+  }
+
+  .medium-content h1 {
+    font-weight: 600;
+    font-size: 50px;
+  }
+
+  .img-1-content h2,
+  .img-2-content h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+  }
+
+  .img-1-content button,
+  .img-2-content button{
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    padding: 4px 18px;
+    border-radius: 20px;
+    border: none;
+    opacity: 100%;
+    position: relative;
+  }
+
+  .white-sneakers h1{
+    font-size: 50px;
+  }
+  .white-sneakers p{
+    font-size: 14px;
+  }
+  .white-sneakers button{
+    padding: 4px 18px;
+  }
+
+
+  
+
+  .bottom-first-list h2{
+    font-size: 14px;
+  }
+  .icons-lists{
+    font-size: 13px;
+  }
+
+  .clothes-image {
+    height: 620px;
+  }
+
+  .perfect-gift-title {
+    height: 180px;
+  }
+  
+  .perfect-gift-title h1 {
+    font-size: 60px;
+  }
+
+  .shop-by-sport {
+    height: 1350px;
+  }
+
+  .shop-by-sport-header {
+    font-size: 22px;
+  }
+
+  .shop-by-sport-content {
+    flex-direction: column;
+  }
+
+  .cricket ,.football , .basketball {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .sport-header {
+    font-size: 18px;
+  }
+
+  /* Bottom Page */
+
+  .become-member, .get-help-header, .about-bottom {
+    font-size: 14px;
+  }
+
+  .social-media {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .bottom-page {
+    height: 720px;
+  }
+
+  .get-help-content {
+    flex-direction: column;
+  }
+
+  .become-member, .get-help, .about {
+    width: 220px;
+  }
+  .social-media {
+    width: 180px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-content {
+    height: 500px;
+  }
+
+  .large-image {
+    height: 400px;
+  }
+
+  .clothes-section {
+    height: 700px;
+  }
+
+  .clothes-image {
+    height: 580px;
+  }
+
+  .perfect-gift-title {
+    height: 150px;
+  }
+  
+  .perfect-gift-title h1 {
+    font-size: 40px;
+    font-family: 'Protest Strike', sans-serif;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trending-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1100px;
+  }
+
+  .img-1,
+  .img-2 {
+    width: 100%;
+    height: 48%;
+  }
+
+  .img-1-content,
+  .img-2-content {
+    padding: 20px;
+  }
+
+  .shoes-content {
+    padding: 12px;
+  }
+
+  .list-of-white-sneakers{
+    margin-top: 4%;
+  }
+
+  .bottom-first{
+    padding: 0;
+  }
+  .bottom-first:hover{
+    height: 160px;
+  }
+  .bottom-first-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid black;
+  }
+  .bottom-first-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .bottom-first-list h2{
+    padding-left: 0;
+  }
+  .icons-lists{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .medium-content h1 {
+    font-size: 40px;
+  }
+
+  .medium-content button {
+    font-size: 12px;
+    padding: 6px 18px;
+  }
+
+  .clothes-section {
+    height: 650px;
+  }
+
+  .clothes-image {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-3 h6 {
+    font-size: 13px;
+  }
+
+  .navbar-3 p {
+    font-size: 11px;
+  }
+
+  .medium-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .medium-content p {
+    font-size: 13px;
+    width: 200px;
+  }
+
+  #top,
+  #bottom {
+    display: none;
+  }
+
+  .medium-content h1 {
+    font-weight: 600;
+    font-size: 32px;
+    width: 150px;
+  }
+
+  .white-sneakers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .white-sneakers .header-p-tag{
+    display: none;
+  }
+  .white-sneakers h1{
+    font-size: 35px;
+    width: 160px;
+  }
+  .white-sneakers p{
+    width: 200px;
+  }
+
+  .clothes-section {
+    height: 600px;
+  }
+
+  .clothes-image {
+    height: 460px;
+  }
+
+  .perfect-gift-title {
+    height: 120px;
+  }
+  
+  .perfect-gift-title h1 {
+    font-size: 30px;
+  }
+
+  .perfect-gift-title p {
+    font-size: 13px;
+    width: 260px;
+    text-align: center;
+  }
+
+  .perfect-gift-title button {
+    padding: 4px 16px;
+    font-size: 16px;
+  }
+}
