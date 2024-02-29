@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Shoe-Ecommerce-Website/static/css/main.4e9827c9.css",
+    "main.js": "/Shoe-Ecommerce-Website/static/js/main.e859d603.js",
+    "static/js/787.60930cba.chunk.js": "/Shoe-Ecommerce-Website/static/js/787.60930cba.chunk.js",
+    "static/media/basketball.jpg": "/Shoe-Ecommerce-Website/static/media/basketball.e3b1460c1502a7f1a1a6.jpg",
+    "static/media/xavier-teo-SxAXphIPWeg-unsplash.jpg": "/Shoe-Ecommerce-Website/static/media/xavier-teo-SxAXphIPWeg-unsplash.0b5226f5d810b46061bc.jpg",
+    "static/media/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg": "/Shoe-Ecommerce-Website/static/media/jeff-tumale-SD9Jyl1xNQ4-unsplash.b02134ddc424c50dc2c2.jpg",
+    "static/media/cricket.jpg": "/Shoe-Ecommerce-Website/static/media/cricket.4c1f84ed818b93883945.jpg",
+    "static/media/football.jpg": "/Shoe-Ecommerce-Website/static/media/football.24c3652d07515a9de19a.jpg",
+    "static/media/violet sneaker.jpg": "/Shoe-Ecommerce-Website/static/media/violet sneaker.4cda695dc1234c37da3f.jpg",
+    "static/media/pngwing.com(2).png": "/Shoe-Ecommerce-Website/static/media/pngwing.com(2).d037bdd5eccc92960f76.png",
+    "index.html": "/Shoe-Ecommerce-Website/index.html",
+    "main.4e9827c9.css.map": "/Shoe-Ecommerce-Website/static/css/main.4e9827c9.css.map",
+    "main.e859d603.js.map": "/Shoe-Ecommerce-Website/static/js/main.e859d603.js.map",
+    "787.60930cba.chunk.js.map": "/Shoe-Ecommerce-Website/static/js/787.60930cba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e9827c9.css",
+    "static/js/main.e859d603.js"
+  ]
+}
