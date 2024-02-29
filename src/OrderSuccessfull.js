@@ -9,7 +9,7 @@ function OrderSuccessfull() {
             <div className="order-details">
                 <i class='bx bxs-check-circle'></i>
                 <h4>Your Order has been taken</h4>
-                <Link to="/"><button className="go-home-button">Go Home</button></Link>
+                <Link to="/Shoe-Ecommerce-Website"><button className="go-home-button">Go Home</button></Link>
             </div>
         </div>
     )
