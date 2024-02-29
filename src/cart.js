@@ -47,9 +47,9 @@ export default function Cart({ cartItems, total, filterCart }) {
                 <div className="summary">
                     <h2>Summary</h2>
                     <p>Subtotal : {total}</p>
-                    <p>Estimated Delivery & Handling : {total === 0 ? 0 : deliveryRate}</p>
+                    <p>Estimated Delivery & Handling : {deliveryRate}</p>
                     <div className="total">
-                        <p>Total : {total === 0 ? 0 : total + deliveryRate}</p>
+                        <p>Total : {deliveryRate}</p>
                     </div>
                     <div className="summary-buttons">
                         <Link to="/purchase"><button>Guest Checkout</button></Link>

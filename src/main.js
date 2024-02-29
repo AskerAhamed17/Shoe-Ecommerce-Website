@@ -28,6 +28,7 @@ export default function Main() {
       mrps.push(product.MRP)
     })
     const total = mrps.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+    console.log('--',total)
     setTotal(total)
   }
 
@@ -57,7 +58,7 @@ export default function Main() {
     <BrowserRouter>
       <Navbar cartItems={cartItems} locationName={locationName} setHeader={setHeader}/>
       <Routes>
-        <Route path="/" element={<App setHeader={setHeader} header={locationName} parentState={parentState} updateParentState={updateParentState} cartItems={cartItems} sumAmount={sumAmount} />} />
+        <Route path="/Shoe-Ecommerce-Website" element={<App setHeader={setHeader} header={locationName} parentState={parentState} updateParentState={updateParentState} cartItems={cartItems} sumAmount={sumAmount} />} />
 
 
         <Route path="/buyShoe" element={<BuyShoe parentState={parentState} updateParentState={updateParentState} cartItems={cartItems} addItemToCart={addItemToCart}

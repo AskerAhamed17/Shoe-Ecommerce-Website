@@ -57,7 +57,6 @@ function Navbar({ sumAmount, cartItems, sidebarOpen, setSidebarOpen, setHeader, 
         <div className="navbar">
             <div className="navbar-2">
                 <div className="logo"></div>
-                <h4>{locationName}</h4>
                 <ul>
                     <li>New & Featured</li>
                     <li>Men</li>
@@ -79,7 +78,7 @@ function Navbar({ sumAmount, cartItems, sidebarOpen, setSidebarOpen, setHeader, 
                 </div>
                 <div className="menu-icons">
                     <i class='bx bx-search'></i>
-                    <Link to="/cart" style={{ color: 'black' }} onClick={sumAmount}><i class='bx bx-cart'></i></Link>
+                    <Link to="/cart" style={{ color: 'black' }} onClick={() => console.log('ehh')}><i class='bx bx-cart'></i></Link>
                     <p className={cartItems.length === 0 ? 'nothing-in-cart' : 'cart-numbers'} style={{position:'relative',right:"10%"}}>{cartItems.length}</p>
                     <i class='bx bx-user'></i>
                     {sidebarOpen ? <i class='bx bx-x' onClick={() => setSidebarOpen(!sidebarOpen)}></i>
